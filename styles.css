@@ -1,0 +1,243 @@
+* {
+    margin: 0.1rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282622;
+    color: #f7f7f7;
+    font-family: "Bahnscrift Regular", sans-serif;
+}
+
+@font-face {
+    font-family: "Gill Sans Ultra Bold";
+    src: url("fonts/gill-sans-ultra-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bahnscrift Regular";
+    src: url("fonts/bahnschrift-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Gill Sans Ultra Bold", sans-serif;
+}
+
+h2, h3, h4 {
+    color: #3F82C7;
+    font-size: xx-large;
+}
+
+header { 
+    color: #f7f7f7; 
+    background-color: #3F82C7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1rem;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 1.5rem;
+}
+
+nav li a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.navlinks {
+    font-family: "Gill Sans Ultra Bold", sans-serif;
+}
+
+main.hero-banner {
+    color: #3F82C7;
+    font-size: xx-large;
+    background: url(images/Christmas\ Star.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+div.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.aboutContent {
+    background-color: #f7f7f7;
+    color: #3F82C7;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    flex-basis: 50%;
+}
+
+.menuTitle {
+    text-align: center;
+    margin: 20px 0;      
+}
+
+.menuContent {
+    background-color: #f7f7f7;
+    color: #3F82C7;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    flex-basis: 50%;
+}
+
+.menuContent ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.item-price {
+    font-weight: 600;
+    float: right;
+}
+
+.item-desc {
+    font-size: 0.9rem;
+    color: #282622;
+    margin-top: 5px;
+}
+
+#toggle {
+    display: none;
+}
+
+#homeBtn {
+    color: #f7f7f7;
+    background-color: none;
+    font-size: xx-large;
+    font-family: "Gill Sans Ultra Bold", sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+button {
+    color: #f7f7f7;
+    background-color: #3F82C7;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+button:focus {
+    color: #000000;
+    border: 1px solid, #f7f7f7;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img.LOGO {
+    width: 60px;
+}
+
+img.POSE {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    color: #f7f7f7;
+    background: #3F82C7;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 570px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: #282622;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        list-style: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+}
